@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+	--border: #dadada;
+	--color-text-primary: #414042;
+	--color-text-secondary: #98999c;
+	--link-primary: #256799;
+	--green: #3c9806;
+	--red: #db5c4c;
+	--lignt-white: #f0f0f0;
+	--blue: #219be7;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	color: var(--color-text-primary);
+}
+
+.container {
+	max-width: 960px;
+	display: block;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* header */
+.header {
+	position: sticky;
+	top: 0;
+	background-color: #f0f2fa;
+	padding: 10px 0;
+	margin-bottom: 20px;
+	border-bottom: 1px solid var(--border);
+}
+
+.header .flx {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header img {
+	height: 40px;
+}
+
+.header .auth a {
+	display: block;
+	font-size: 0.9rem;
+	color: var(--color-text-secondary);
+	text-decoration: none;
+	background: url("../images/auth-icon.png") no-repeat 0 50%;
+	background-size: 25px;
+	padding: 4px 0 4px 30px;
+}
+
+.header .auth a:hover {
+	text-decoration: underline;
+}
+
+/* header - end */
+
+/* filter */
+.filter {
+	background-color: var(--red);
+	padding: 15px;
+	border-radius: 8px;
+}
+
+.filter form {
+	display: flex;
+	justify-content: space-between;
+	gap: 0 20px;
+}
+
+.filter form .block {
+	width: calc(100% / 2);
+}
+
+.filter form .checkbox-area {
+	margin-bottom: 20px;
+}
+
+.filter form .checkbox-area .name {
+	color: var(--lignt-white);
+	margin-bottom: 10px;
+}
+
+.filter form .checkbox-area label {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.filter form label .two-lines-area {
+	display: flex;
+	gap: 0 10px;
+}
+
+.filter form label .two-lines-area .box {
+	width: calc(100% / 2);
+}
+
+.filter form label {
+	display: block;
+	color: var(--lignt-white);
+	margin-bottom: 20px;
+}
+
+.filter form input[type="text"],
+.filter form select {
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid var(--border);
+	letter-spacing: 0.5px;
+	outline: none;
+	padding: 0 10px;
+	margin-top: 10px;
+}
+
+.filter form input[type="checkbox"] {
+	width: 20px;
+	height: 20px;
+	margin-right: 8px;
+}
+
+.filter form button {
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	background: var(--blue) url("../images/search-icon.png") no-repeat
+		calc(50% - 50px) 50%;
+	background-size: 20px;
+	color: var(--lignt-white);
+	font-weight: 700;
+	font-size: 20px;
+}
+/* filter - end */
+
+/* content */
+.main-content .flx-item {
+	display: flex;
+	border-bottom: 1px solid var(--border);
+	padding: 30px 0;
+}
+
+.main-content .flx-item:nth-last-child(1) {
+	border-bottom: none;
+}
+
+.main-content .flx-item .left {
+	margin-right: 20px;
+}
+
+.main-content .flx-item .left img {
+	width: 350px;
+	border-radius: 6px;
+}
+
+.main-content .flx-item .right a.car-name {
+	display: block;
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: var(--link-primary);
+	text-decoration: none;
+	margin-bottom: 15px;
+}
+
+.main-content .flx-item .right .price {
+	color: var(--green);
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
+.main-content .flx-item .right p {
+	font-size: 0.938rem;
+	line-height: 1.4;
+	margin-top: 5px;
+}
+
+.main-content .flx-item .right .description-area {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+
+.main-content .flx-item .right .description-area .text {
+	flex: 1 0 50%;
+	padding-left: 25px;
+	margin-bottom: 10px;
+}
+
+.main-content .flx-item .right .description-area .mileage {
+	background: url("../images/mileage.svg") no-repeat 0 50%;
+}
+
+.main-content .flx-item .right .description-area .location {
+	background: url("../images/location.svg") no-repeat 0 50%;
+}
+
+.main-content .flx-item .right .description-area .fuel {
+	background: url("../images/fuel.svg") no-repeat 0 50%;
+}
+
+.main-content .flx-item .right .description-area .at {
+	background: url("../images/at.svg") no-repeat 0 50%;
+}
+/* content - end */
+
+/* footer */
+.footer {
+	border-top: 1px solid var(--border);
+	background-color: #fff;
+	padding: 10px 0;
+	margin-top: 20px;
+}
+
+.footer .flx {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer .flx .left {
+	display: flex;
+	align-items: center;
+}
+
+.footer .flx .left img {
+	border-radius: 4px;
+	margin-right: 10px;
+}
+
+.footer .flx .left p {
+	font-size: 0.875rem;
+	color: var(--color-text-secondary);
+}
+
+.footer .flx .right {
+	display: flex;
+	align-items: center;
+	gap: 0 5px;
+}
+
+.footer .flx .right a {
+	font-size: 0.875rem;
+	color: var(--link-primary);
+	text-decoration: none;
+}
+
+.footer .flx .right a:hover {
+	text-decoration: underline;
+}
+/* footer - end */
