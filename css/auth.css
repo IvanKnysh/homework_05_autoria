@@ -41,3 +41,7 @@ body {
 .auth form p a:hover {
 	text-decoration: underline;
 }
+
+.auth form button.top {
+	margin-top: 20px;
+}
