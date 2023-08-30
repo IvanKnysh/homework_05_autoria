@@ -107,12 +107,17 @@
 }
 
 .main-content .flx-item .left {
+	width: 40%;
 	margin-right: 20px;
 }
 
 .main-content .flx-item .left img {
-	width: 350px;
+	width: 100%;
 	border-radius: 6px;
+}
+
+.main-content .flx-item .right {
+	width: 60%;
 }
 
 .main-content .flx-item .right a.car-name {
