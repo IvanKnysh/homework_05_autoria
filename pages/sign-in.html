@@ -7,12 +7,26 @@
 			AUTO.RIA™ — Автобазар №1. Купити і продати авто легко як ніколи
 		</title>
 		<link rel="stylesheet" href="../css/reset.css" />
-		<link rel="stylesheet" href="../css/styles.css" />
+		<link rel="stylesheet" href="../css/auth.css" />
 		<link
 			rel="shortcut icon"
 			href="../images/favicon.ico"
 			type="image/x-icon"
 		/>
 	</head>
-	<body></body>
+	<body>
+		<div class="auth">
+			<img src="../images/logo.png" alt="Logo" />
+			<form action="https://fom.in.ua/echo" method="post">
+				<input type="text" name="login" placeholder="Логін" />
+				<input type="text" name="password" placeholder="Пароль" />
+				<label>
+					<input type="checkbox" name="remember" value="true" />
+					Запам'ятати цей комп'ютер
+				</label>
+				<button type="submit">Увійти</button>
+				<p>Ще не зареєстровані? <a href="./sign-up.html">Зареєструватись</a></p>
+			</form>
+		</div>
+	</body>
 </html>

@@ -1,0 +1,43 @@
+@import "./global.css";
+
+body {
+	background-color: var(--red);
+}
+
+.auth {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	background-color: var(--lignt-white);
+	padding: 20px;
+	border-radius: 12px;
+}
+
+.auth img {
+	display: block;
+	margin: 0 auto 10px;
+	width: 150px;
+}
+
+.auth form label {
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.auth form p {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.auth form p a {
+	color: var(--link-primary);
+	text-decoration: none;
+}
+
+.auth form p a:hover {
+	text-decoration: underline;
+}
