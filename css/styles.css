@@ -106,21 +106,21 @@
 	border-bottom: none;
 }
 
-.main-content .flx-item .left {
+.main-content .flx-item .img-area {
 	width: 40%;
 	margin-right: 20px;
 }
 
-.main-content .flx-item .left img {
+.main-content .flx-item .img-area img {
 	width: 100%;
 	border-radius: 6px;
 }
 
-.main-content .flx-item .right {
+.main-content .flx-item .content-area {
 	width: 60%;
 }
 
-.main-content .flx-item .right a.car-name {
+.main-content .flx-item .content-area a.car-name {
 	display: block;
 	font-size: 1.25rem;
 	font-weight: 500;
@@ -129,43 +129,43 @@
 	margin-bottom: 15px;
 }
 
-.main-content .flx-item .right .price {
+.main-content .flx-item .content-area .price {
 	color: var(--green);
 	font-weight: 700;
 	font-size: 1.5rem;
 }
 
-.main-content .flx-item .right p {
+.main-content .flx-item .content-area p {
 	font-size: 0.938rem;
 	line-height: 1.4;
 	margin-top: 5px;
 }
 
-.main-content .flx-item .right .description-area {
+.main-content .flx-item .content-area .description-area {
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 15px;
 }
 
-.main-content .flx-item .right .description-area .text {
+.main-content .flx-item .content-area .description-area .text {
 	flex: 1 0 50%;
 	padding-left: 25px;
 	margin-bottom: 10px;
 }
 
-.main-content .flx-item .right .description-area .mileage {
+.main-content .flx-item .content-area .description-area .mileage {
 	background: url("../images/mileage.svg") no-repeat 0 50%;
 }
 
-.main-content .flx-item .right .description-area .location {
+.main-content .flx-item .content-area .description-area .location {
 	background: url("../images/location.svg") no-repeat 0 50%;
 }
 
-.main-content .flx-item .right .description-area .fuel {
+.main-content .flx-item .content-area .description-area .fuel {
 	background: url("../images/fuel.svg") no-repeat 0 50%;
 }
 
-.main-content .flx-item .right .description-area .at {
+.main-content .flx-item .content-area .description-area .at {
 	background: url("../images/at.svg") no-repeat 0 50%;
 }
 /* content - end */
@@ -184,34 +184,34 @@
 	align-items: center;
 }
 
-.footer .flx .left {
+.footer .flx .copyright {
 	display: flex;
 	align-items: center;
 }
 
-.footer .flx .left img {
+.footer .flx .copyright img {
 	border-radius: 4px;
 	margin-right: 10px;
 }
 
-.footer .flx .left p {
+.footer .flx .copyright p {
 	font-size: 0.875rem;
 	color: var(--color-text-secondary);
 }
 
-.footer .flx .right {
+.footer .flx .lang {
 	display: flex;
 	align-items: center;
 	gap: 0 5px;
 }
 
-.footer .flx .right a {
+.footer .flx .lang a {
 	font-size: 0.875rem;
 	color: var(--link-primary);
 	text-decoration: none;
 }
 
-.footer .flx .right a:hover {
+.footer .flx .lang a:hover {
 	text-decoration: underline;
 }
 /* footer - end */
